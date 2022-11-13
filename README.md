@@ -18,5 +18,11 @@ docker-compose up
 #STEP#6 create new controller
 docker-compose run --rm app rails g controller pages home about
 
+#STEP#7 migrate db
+docker-compose run --rm app rails db:migrate
+
+#STEP#8 run rails console
+docker-compose run --rm app rails c
+
 
 
