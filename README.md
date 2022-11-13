@@ -15,3 +15,8 @@ docker-compose run --rm app rake db:migrate
 #STEP#5 
 docker-compose up
 
+#STEP#6 create new controller
+docker-compose run --rm app rails g controller pages home about
+
+
+
